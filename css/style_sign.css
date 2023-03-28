@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: optional;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/img/Banner-Image-5.jpg") no-repeat center;
+    transition: 1s;
+    background-size: cover;
+}
+
+body.active {
+    background: url("/img/AB5I6743_NikkiTo.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    padding: 40px 0;
+    position: relative;
+}
+
+.block {
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgb(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.block-item {
+    text-align: center;
+    width: 50%;
+}
+
+.block-item_title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.block-item_btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-box {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-box.active {
+    left: 50%;
+}
+
+.form {
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+    position: absolute;
+    transition: 0.5;
+}
+
+.form_signup_in {
+    left: 0;
+}
+
+.form_signup_up {
+    left: 100%;
+}
+
+.form-box.active .form_signup_in {
+    left: -100%;
+}
+
+.form-box.active .form_signup_up {
+    left: 0;
+}
+
+.form_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form_input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px;
+    font-size: inherit;
+}
+
+.form_btn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #0e1d28;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+.form_signup_btn {
+    background-color: #0e1d28;
+}
