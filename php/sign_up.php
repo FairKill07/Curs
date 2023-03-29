@@ -1,18 +1,5 @@
 <?php
 
-// Подключаемся к базе данных
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Проверяем, удалось ли подключиться
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
 // Получаем данные из формы регистрации
 $username = $_POST['username'];
 $password = $_POST['password'];
