@@ -7,13 +7,13 @@ const body = document.body;
 
 
 sigiUnBtn.addEventListener('click', () => {
-	form.classList.add('active');
-	body.classList.add('active');
+    form.classList.add('active');
+    body.classList.add('active');
 });
 
 sigiInBtn.addEventListener('click', () => {
-	form.classList.remove('active');
-	body.classList.remove('active');
+    form.classList.remove('active');
+    body.classList.remove('active');
 })
 
 // $(".phone").mask("+38(999)999-9999");

@@ -1,27 +1,31 @@
 <?php
+session_start();
+require_once 'db_add.php';
 
-// Получаем данные из формы входа
-$username = $_POST['username'];
-$password = $_POST['password'];
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-// Получаем хэш пароля из базы данных для указанного пользователя
-$sql = "SELECT password FROM users WHERE username='$username'";
-$result = mysqli_query($conn, $sql);
+    // Получаем данные пользователя из базы данных по его имени пользователя
+    try {
+        $stmt = $db->prepare("SELECT * FROM users WHERE username = :username LIMIT 1");
+        $stmt->bindParam(':username', $username);
+        $stmt->execute();
+        $user = $stmt->fetch();
 
-if (mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_assoc($result);
-    $hashed_password = $row["password"];
-
-    // Сравниваем хэш пароля из базы данных с введенным паролем
-    if (password_verify($password, $hashed_password)) {
-        echo "Вход выполнен успешно!";
-    } else {
-        echo "Неправильный логин или пароль.";
+        // Если пользователь найден и пароль верен, то создаем сессию и перенаправляем на главную страницу
+        if ($user && $user['password'] === $password) {
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
+            header('Location: ../index.php');
+            exit();
+        } else {
+            $error_message = 'Неправильный логин или пароль.';
+        }
+    } catch (PDOException $e) {
+        $error_message = 'Ошибка входа: ' . $e->getMessage();
     }
-} else {
-    echo "Неправильный логин или пароль.";
 }
 
-mysqli_close($conn);
-
+$db = null;
 ?>

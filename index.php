@@ -10,13 +10,14 @@
 </head>
 
 <body>
+
     <!-- Header start -->
     <header class="header">
         <div class="wrapper">
             <div class="header__wrapper">
                 <div class="header__logo">
                     <a href="/" class="header__logo-link">
-                        <img src="img\ORIGAMIlogo.png" alt="Discover Amazing places in Japan" class="header__logo-pic">
+                        <img src="img/ORIGAMIlogo.png" alt="Discover Amazing places in Japan" class="header__logo-pic">
                     </a>
                 </div>
 
@@ -31,9 +32,17 @@
                         <li class="header__item">
                             <a href="#videos" class="header__link js-scroll">Videos</a>
                         </li>
-                        <li class="header__item">
-                            <a href="sign.html" class="header__link js-scroll">Sign in</a>
-                        </li>
+                        <?php
+                        // проверяем, авторизован ли пользователь
+                        session_start();
+                        if (isset($_SESSION['username'])) {
+                            // если да, показываем кнопку Log Out
+                            echo '<li class="header__item"><a href="php/logout.php" class="header__link js-scroll">Log Out</a></li>';
+                        } else {
+                            // если нет, показываем кнопку Sign In
+                            echo '<li class="header__item"><a href="sign.html" class="header__link js-scroll">Sign In</a></li>';
+                        }
+                        ?>
                     </ul>
                     <div class="header__nav-close">
                         <span class="header__nav-close-line"></span>
@@ -49,6 +58,7 @@
         </div>
     </header>
     <!-- Header end -->
+
 
 
     <main class="main">

@@ -26,42 +26,49 @@
 
         </div>
 
+
+
         <div class="form-box">
-            <form method="post" action="sign_in.php" class="form form_signup_in">
+            <form method="post" action="php\sign_in.php" class="form form_signup_in">
+
                 <h3 class="form_title">Вхід</h3>
                 <p>
-                    <input type="text" id="username" class="form_input" placeholder="Логін">
+                    <input type="text" name="username" class="form_input" placeholder="Логін">
                 </p>
                 <p>
-                    <input type="password" id="password" class="form_input" placeholder="Пароль">
+                    <input type="password" name="password" class="form_input" placeholder="Пароль">
                 </p>
                 <p>
                     <button class="form_btn">Увійти</button>
                 </p>
             </form>
 
-            <form method="post" action="sign_up.php" class="form form_signup_up">
+            <form method="post" action="php\sign_up.php" class="form form_signup_up">
+
                 <h3 class="form_title">Реєстрація</h3>
                 <p>
-                    <input type="text" id=" username" class="form_input " placeholder="Логин">
+                    <input type="text" id="username" name="username" class="form_input " placeholder="Логин">
                 </p>
                 <p>
-                    <input type="password" id="password" class="form_input" placeholder="Пароль">
+                    <input type="password" id="password" name="password" class="form_input" placeholder="Пароль">
                 </p>
                 <p>
-                    <input type="email" id="email" class="form_input" placeholder="Пошта">
+                    <input type="email" id="email" name="email" class="form_input" placeholder="Пошта">
                 </p>
                 <p>
-                    <input type="tel" id="phone" class="phone form_input " placeholder="Ваш номер телефону">
+                    <input type="tel" id="phone" name="phone" class="phone form_input " placeholder="Ваш номер телефону">
                 </p>
                 <p>
-                    <button class="form_btn form_signup_btn">Зареєструватися</button>
+                    <button id="click" class="form_btn form_signup_btn">Зареєструватися</button>
                 </p>
             </form>
         </div>
     </article>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script defer src="js/script.js"></script>
+    <script defer src="js/post.js"></script>
+
 </body>
 
 </html>

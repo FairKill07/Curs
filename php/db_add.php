@@ -15,10 +15,3 @@ try {
     exit();
 }
 
-// Подключаем необходимые файлы
-require_once('sign_in.php');
-require_once('sign_up.php');
-// ...
-
-// Закрываем соединение с базой данных
-$db = null;
