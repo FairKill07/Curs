@@ -602,6 +602,7 @@ img {
     transition: 0.2s linear;
     padding-bottom: 5px;
     z-index: 999;
+    background-color: #0000004d;
 }
 
 .header_active {
@@ -696,6 +697,14 @@ img {
 .intro {
     min-height: 100vh;
     background: url("../img/Banner-Image-5.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_img_nth {
+    background: url("../img/AB5I5541_NikkiTo.jpg") no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -1028,6 +1037,125 @@ img {
 .footer__menu-link:active {
     opacity: 0.75;
 }
+
+
+/* Top places styles start */
+
+.top {
+    margin-top: 50px;
+    margin-bottom: 86px;
+}
+
+.top__title {
+    margin-bottom: 54px;
+}
+
+.top__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 57px;
+    row-gap: 57px;
+}
+
+.top__card-pic {
+    position: relative;
+    margin-bottom: 45px;
+    min-height: 364px;
+}
+
+.top__card-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+}
+
+.top__card-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+
+.top__card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0 auto 0 0;
+}
+
+.top__card-likes {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding-right: 20px;
+    background: url(../img/svg/heart-ico.svg) no-repeat right;
+    margin-right: 14px;
+}
+
+.top__card-comments {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding-right: 23px;
+    background: url(../img/svg/comment-ico.svg) no-repeat right;
+}
+
+.top__card-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+
+.top__card-more {
+    width: 118px;
+    padding: 12px 19px;
+    background: #006DFE;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin: auto 0 0 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.top__card-more:hover,
+.top__card-more:focus,
+.top__card-more:active {
+    background: #0e66da;
+}
+
+
+/* Top places styles end */
 
 
 /* Footer styles end */

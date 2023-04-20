@@ -140,7 +140,7 @@
                         <p class="tour__desc">
                             A progression of rare and beautiful ingredients where texture, flavour and harmony is paramount. Delve into the Quay dining experience with Peter Gilmore’s Menu and a thoughtfully curated Wine List by Head Sommelier, Wilem Powell.
                         </p>
-                        <a href="#!" class="tour__more">READ MORE</a>
+                        <a href="menu.php" class="tour__more">READ MORE</a>
                     </div>
                 </div>
 
