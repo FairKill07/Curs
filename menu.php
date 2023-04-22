@@ -7,8 +7,8 @@
     <title>Discover Amazing places in Japan</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    
-    
+    <link href="./css/messeg.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -53,6 +53,7 @@
                         <span class="header__nav-close-line"></span>
                     </div>
                 </nav>
+
                 <div class="header__burger burger">
                     <span class="burger__line burger__line_first"></span>
                     <span class="burger__line burger__line_second"></span>
@@ -62,29 +63,34 @@
         </div>
     </header>
     <!-- Header end -->
-
     
     <main class="main">
 
-    <!-- Intro start -->
-    <section class="intro intro_img_nth" id="sign-in" >
+        <!-- Intro start -->
+        <section class="intro intro_img_nth" id="sign-in">
             <div class="wrapper">
                 <h1 class="intro__title">
                     MENU
                 </h1>
             </div>
         </section>
-    <!-- Intro end -->
+        <!-- Intro end -->
 
-    <!-- Top start -->
-    <section class="top" id="locations">
-        <div class="wrapper-full">
-            <h2 class="top__title section-title">
-                Today top places to visit
-            </h2>
+        <!-- Mesg_info -->
+        <div class="top__cards">
+            <div class="toast toast_message toast_default">
+                <div class="toast__body">Сообщение...</div>
+                <button class="toast__close" type="button"></button>
+            </div>
+        </div>
+        <!-- Mesg_info -->
 
-            <div class="top__cards">
-
+        <!-- Top start -->
+        <section class="top" id="locations">
+            <div class="wrapper-full">
+                <h2 class="top__title section-title">
+                    Today top places to visit
+                </h2>
                 <div class="top__card">
                     <div class="top__card-pic">
                         <img src="./img/top-pic-1-min.jpg" alt="NAGOYA" class="top__card-thumb">
@@ -92,111 +98,30 @@
                             <h3 class="top__card-title">
                                 NAGOYA
                             </h3>
-                             
+
                         </div>
                     </div>
                     <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with
+                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                        Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's
+                        head. Chase ball of string hide when guests come over. Being gorgeous with
                         belly side up i could pee on this.
                     </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
+                    <button class="top__card-more btn popup btn-primary btn-buy " id="1">Купить
+                    </button>
                 </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-2-min.jpg" alt="NIIGATA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                NIIGATA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-3-min.jpg" alt="OSAKA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                OSAKA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-4-min.jpg" alt="SAITAMA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                SAITAMA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-5-min.jpg" alt="UENO" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                UENO
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with
-                        belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-6-min.jpg" alt="SHIBUYA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                SHIBUYA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-                
-                
-
             </div>
-        </div>
-    </section>
-    <!-- Top end -->    
 
-    <!-- Tours start -->
-    <div class="tours" id="articles">
-        <div class="wrapper-full">
+        </section>
+        <!-- Top end -->
 
-            <h2 class="top__title section-title">
-                Today top places to visit
-            </h2>
+        <!-- Tours start -->
+        <div class="tours" id="articles">
+            <div class="wrapper-full">
+
+                <h2 class="top__title section-title">
+                    Today top places to visit
+                </h2>
 
                 <div class="tours__tour tour">
                     <div class="tour__pic">
@@ -207,7 +132,9 @@
                             Menu
                         </h3>
                         <p class="tour__desc">
-                            A progression of rare and beautiful ingredients where texture, flavour and harmony is paramount. Delve into the Quay dining experience with Peter Gilmore’s Menu and a thoughtfully curated Wine List by Head Sommelier, Wilem Powell.
+                            A progression of rare and beautiful ingredients where texture, flavour and harmony is
+                            paramount. Delve into the Quay dining experience with Peter Gilmore’s Menu and a
+                            thoughtfully curated Wine List by Head Sommelier, Wilem Powell.
                         </p>
                         <a href="menu.php" class="tour__more">READ MORE</a>
                     </div>
@@ -219,120 +146,26 @@
                             PETER GILMORE
                         </h3>
                         <p class="tour__desc">
-                            Peter’s appreciation of nature’s diversity and his endless experimentation in the kitchen and garden are the driving forces in his cooking. Peter leads the Quay team with a focus on excellence, innovation and hospitality.
+                            Peter’s appreciation of nature’s diversity and his endless experimentation in the kitchen
+                            and garden are the driving forces in his cooking. Peter leads the Quay team with a focus on
+                            excellence, innovation and hospitality.
                         </p>
                         <a href="#!" class="tour__more">READ MORE</a>
                     </div>
                     <div class="tour__pic tour__pic_mob-first">
-                        <img src="./img/rest_ckook.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
+                        <img src="./img/rest_ckook.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama"
+                            class="tour__thumb">
                     </div>
-                </div>
-            </div>
-    </div>
-    <!-- Tours end -->
-
-    <!-- Top start -->
-    <section class="top" id="locations">
-        <div class="wrapper-full">
-            <h2 class="top__title section-title">
-                Today top places to visit
-            </h2>
-
-            <div class="top__cards">
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-1-min.jpg" alt="NAGOYA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                NAGOYA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with
-                        belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-2-min.jpg" alt="NIIGATA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                NIIGATA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-3-min.jpg" alt="OSAKA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                OSAKA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-4-min.jpg" alt="SAITAMA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                SAITAMA
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
-                </div>
-
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-5-min.jpg" alt="UENO" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                UENO
-                            </h3>
-                             
-                        </div>
-                    </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with
-                        belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn btn-primary btn-buy" id="1">Купить</button>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Top end -->  
+        <!-- Tours end -->
 
-    <main>
-
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/main-es6.js"></script>
+    <script src="./js/messeg.min.js"></script>
 
 </body>
-
-
