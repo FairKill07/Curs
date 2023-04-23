@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Amazing places in Japan</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link href="./css/messeg.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
 
 </head>
 
@@ -91,26 +92,32 @@
                 <h2 class="top__title section-title">
                     Today top places to visit
                 </h2>
-                <div class="top__card">
-                    <div class="top__card-pic">
-                        <img src="./img/top-pic-1-min.jpg" alt="NAGOYA" class="top__card-thumb">
-                        <div class="top__card-stats">
-                            <h3 class="top__card-title">
-                                NAGOYA
-                            </h3>
+                <div class="top__cards">
+                    <div class="top__card">
+                        <div class="top__card-pic">
+                            <img src="./img/top-pic-1-min.jpg" alt="NAGOYA" class="top__card-thumb">
+                            <div class="top__card-stats">
+                                <h3 class="top__card-title">
+                                    NAGOYA
+                                </h3>
 
+                            </div>
                         </div>
+                        <p class="top__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's
+                            head. Chase ball of string hide when guests come over. Being gorgeous with
+                            belly side up i could pee on this.
+                        </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="1">Купить
+                        </button>
                     </div>
-                    <p class="top__card-desc">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                        Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's
-                        head. Chase ball of string hide when guests come over. Being gorgeous with
-                        belly side up i could pee on this.
-                    </p>
-                    <button class="top__card-more btn popup btn-primary btn-buy " id="1">Купить
-                    </button>
+                    
                 </div>
+                
+                
             </div>
+
 
         </section>
         <!-- Top end -->
