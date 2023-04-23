@@ -10,22 +10,18 @@ $('.btn-buy').click(function() { //клип на кнопку
     });
 });
 
-$('.count-product').change(function() { //изменение содержимого инпута     
-    var col = $(this).val(); //получаем количество
-    if (col < 1) {
-        col = 1;
-        $(this).val(1);
-    } //если ввели меньше 1 установим 1
-    var id = $(this).attr('id'); //получаем id товара
+function val(value, id) { //изменение содержимого инпута     
+
     $.ajax({ //аякс-запрос
         type: "POST", //метод
         url: '../php/cartamount.php', //куда передаем
-        data: { col_tov: col, id_tov: id }, //данные
+        data: { col_tov: value, id_tov: id }, //данные
         success: function() { //получаем результат
             //тут можно пересчитать сумму
         }
     });
-});
+
+};
 
 //удаление товара
 $('.btn-del').click(function() { //клик на кнопку     
@@ -36,7 +32,54 @@ $('.btn-del').click(function() { //клик на кнопку
         data: { id_tov: id }, //данные
         success: function(data) { //получаем результат
             //тут можно пересчитать сумму
-            $('tr#' + id).css('display', 'none'); //скрываем строку таблицы
+            $('.' + id).fadeOut(); //скрываем строку таблицы
         }
     });
 });
+
+$('.minus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+
+    var value = parseInt($input.val());
+    if (value > 1) {
+        value = value - 1;
+    } else {
+        value = 0;
+    }
+    var id = $input.attr('id');
+    val(value, id);
+
+    $input.val(value);
+});
+
+$('.plus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var id = $(this).attr('id');
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+    if (value < 100) {
+        value = value + 1;
+    } else {
+        value = 100;
+    }
+    var id = $input.attr('id');
+    val(value, id)
+
+    $input.val(value);
+});
+
+
+
+
+document.querySelector('.btn-buy').onclick = () => {
+    new Toast({
+        title: false,
+        text: 'Спасибо',
+        theme: 'light',
+        autohide: true,
+        interval: 10000
+    });
+};
