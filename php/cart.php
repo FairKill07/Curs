@@ -111,6 +111,12 @@
                 <?php endforeach; ?>
             <?php endif; ?>
 
+            <div class="title">
+            <form method="post" action="sign_work.php">
+            <button class="top__card-more ">Купить</button>
+            </form>
+            </div>
+
         </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

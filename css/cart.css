@@ -39,6 +39,16 @@ body {
     font-weight: 400;
 }
 
+.title:last-child {
+    height: 70px;
+    border-top: 1px solid #E1E8EE;
+    padding: 13px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 0px;
+}
+
 .item {
     padding: 20px 30px;
     height: 120px;
