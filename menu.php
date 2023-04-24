@@ -104,10 +104,7 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                            Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's
-                            head. Chase ball of string hide when guests come over. Being gorgeous with
-                            belly side up i could pee on this.
+                            Jump 
                         </p>
                         <button class="top__card-more btn popup btn-primary btn-buy " id="1">Купить
                         </button>

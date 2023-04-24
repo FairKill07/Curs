@@ -69,22 +69,33 @@
             <?php
             if (!isset($_SESSION['cart'])): ?>
 
-                <h2>Ваша корзина пуста</h2>
+                
 
-            <?php else: ?>
-                <?php $temp = $_SESSION['cart'];
-                foreach ($temp as $id => $kol): ?>
+            <?php else: require_once 'db_add.php';
+            error_reporting(0);?>
+
+
+                <?php 
+                $temp = $_SESSION['cart'];
+                $productIds = array_keys($temp);
+                $stmt = $db->prepare("SELECT * FROM products WHERE id IN (" . implode(',', $productIds) . ")");
+                $stmt->execute();
+                $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($temp as $id => $kol):
+                    $product = array_filter($result, function($item) use ($id) {
+                        return $item['id'] == $id;
+                    }); ?>
                     <div class="item <?= $id ?>" id="<?= $id ?>">
                         <div class="buttons">
                             <button class="delete-btn btn-del" id="<?= $id ?>">X</button>
                         </div>
-                        <div class="image">
-                            <img src="item-3.png" alt="" />
+                        <div class="image img-cart">
+                            <img src="../img/<?= $product[array_key_first($product)]['photo_path'] ?>" alt="" />
                         </div>
 
                         <div class="description">
-                            <span>Brushed Scarf</span>
-                            <span>Блюдо</span>
+                            <span><?= $product[array_key_first($product)]['product_name'] ?></span>
+                            <span><?= $product[array_key_first($product)]['dish_type'] ?></span>
                             <span>Код товара :
                                 <?= $id ?>
                             </span>
@@ -95,7 +106,7 @@
                             <input type="text" class="count-product" id="<?= $id ?>" name="name" value="<?= $kol ?>">
                             <button class="minus-btn" type="button" name="button">-</button>
                         </div>
-                        <div class="total-price">$349</div>
+                        <div class="total-price">$<?= $product[array_key_first($product)]['price'] ?></div>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>
