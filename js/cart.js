@@ -73,13 +73,13 @@ $('.plus-btn').on('click', function(e) {
 
 
 
-
-document.querySelector('.btn-buy').onclick = () => {
+$('.btn-buy').on('click', function(e) {
+    e.preventDefault();
     new Toast({
         title: false,
         text: 'Спасибо',
         theme: 'light',
         autohide: true,
         interval: 10000
-    });
-};
+    })
+});

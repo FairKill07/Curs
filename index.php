@@ -32,6 +32,9 @@
                         <li class="header__item">
                             <a href="#videos" class="header__link js-scroll">Videos</a>
                         </li>
+                        <li class="header__item">
+                            <a class="header__link js-scroll btn-lg" href="php/cart.php">Cart</a>
+                        </li>
                         <?php
                         // проверяем, авторизован ли пользователь
                         session_start();

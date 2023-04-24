@@ -19,7 +19,7 @@
             <div class="wrapper">
                 <div class="header__wrapper">
                     <div class="header__logo">
-                        <a href="/" class="header__logo-link">
+                        <a href="../menu.php" class="header__logo-link">
                             <img src="../img/ORIGAMIlogo.png" alt="Discover Amazing places in Japan"
                                 class="header__logo-pic">
                         </a>
