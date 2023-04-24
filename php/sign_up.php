@@ -1,7 +1,8 @@
 <?php
-require_once 'db_add.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    require_once 'db_add.php';
+
     $username = $_POST['username'];
     $password = $_POST['password'];
     $email = $_POST['email'];
@@ -24,8 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindParam(':phone', $phone);
 
             if ($stmt->execute()) {
-                header('Location: ../index.php');
-                exit();
+                echo $error_message = "Успешная регестрация";
             } else {
                 $error_message = "Ошибка регистрации: " . $stmt->errorInfo()[2];
             }

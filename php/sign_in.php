@@ -1,8 +1,7 @@
 <?php
-session_start();
-require_once 'db_add.php';
-
+    session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    require_once 'db_add.php';
     $username = $_POST['username'];
     $password = $_POST['password'];
 

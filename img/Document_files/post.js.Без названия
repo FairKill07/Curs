@@ -5,6 +5,7 @@ $('#click').click(function(e) {
     let email = $("#email").val()
     let phone = $("#phone").val()
 
+    mydata = { username: username, password: password, email: email, phone: phone };
     $.ajax({
         url: './php/sign_up.php',
         method: 'post',
