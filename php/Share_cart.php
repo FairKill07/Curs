@@ -13,7 +13,7 @@
         $stmt->execute([$_SESSION['user_id']]);
         $sessionData = $stmt->fetchColumn();
 
-        if (!$sessionData == NULL) {
+        if (!$sessionData ) {
             echo 'Your shopping cart is empty';
         } else {
 
