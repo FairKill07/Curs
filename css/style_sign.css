@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 body {
-    font: optional;
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;

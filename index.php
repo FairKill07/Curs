@@ -24,7 +24,7 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#articles" class="header__link js-scroll">Articles</a>
+                            <a href="#articles" class="header__link js-scroll">Інформація</a>
                         </li>
                         <li class="header__item">
                             <a href="#locations" class="header__link js-scroll">Locations</a>
