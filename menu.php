@@ -29,13 +29,13 @@
                             <a href="#articles" class="header__link js-scroll">About</a>
                         </li>
                         <li class="header__item">
-                            <a href="#locations" class="header__link js-scroll">Dishes</a>
+                            <a href="#locations" class="header__link js-scroll">Страви</a>
                         </li>
                         <li class="header__item">
-                            <a href="#locations1" class="header__link js-scroll">Сarte</a>
+                            <a href="#locations1" class="header__link js-scroll">Вина</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link js-scroll btn-lg" href="php/cart.php">Cart</a>
+                            <a class="header__link js-scroll btn-lg" href="php/cart.php">Кошик</a>
                         </li>
                         <?php
                         // проверяем, авторизован ли пользователь
@@ -45,7 +45,7 @@
                             echo '<li class="header__item"><a href="php/logout.php" class="header__link js-scroll">Log Out</a></li>';
                         } else {
                             // если нет, показываем кнопку Sign In
-                            echo '<li class="header__item"><a href="sign.html" class="header__link js-scroll">Sign In</a></li>';
+                            echo '<li class="header__item"><a href="sign.html" class="header__link js-scroll">Увійти</a></li>';
                         }
                         ?>
                     </ul>
@@ -64,7 +64,7 @@
         </div>
     </header>
     <!-- Header end -->
-    
+
     <main class="main">
 
         <!-- Intro start -->
@@ -80,7 +80,7 @@
         <!-- Mesg_info -->
         <div class="top__cards">
             <div class="toast toast_message toast_default">
-                <div class="toast__body">Сообщение...</div>
+                <div class="toast__body">Товар додано</div>
                 <button class="toast__close" type="button"></button>
             </div>
         </div>
@@ -90,7 +90,7 @@
         <section class="top" id="locations">
             <div class="wrapper-full">
                 <h2 class="top__title section-title">
-                Today's best dishes to order
+                    Сьогодні найкращі страви на замовлення
                 </h2>
                 <div class="top__cards">
                     <div class="top__card">
@@ -98,15 +98,16 @@
                             <img src="./img/crunchy.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Crunchy Celery Apple Salad
+                                    Crunchy Celery Apple Salad
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Яблочный салат с хрустящим сельдереем, легкий и освежающий салат из сельдерея с хрустящими зелеными яблоками, редисом, красным луком, свежей петрушкой и мятой, сушеной клюквой и семечками подсолнуха. Идеальный способ использовать оставшийся сельдерей!
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="3">Купить
+                            Яблучний салат з хрустким селера, легкий і освіжаючий салат з селери з хрусткими зеленими
+                            яблуками, редькою, червоною цибулею, свіжою петрушкою і м'ятою, сушеними журавлинами і
+                            соняшниковим насінням. Ідеальний спосіб використовувати селера, що залишився! </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="3">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -114,15 +115,16 @@
                             <img src="./img/Mango_Salad.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Spicy Thai Mango Salad
+                                    Spicy Thai Mango Salad
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Острый тайский салат из манго со свежим манго, огурцом, морковью и большим количеством кинзы — легкий и легкий салат, идеально подходящий для лета! Веганский и безглютеновый рецепт.
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="4">Купить
+                            Гострий тайський салат із манго зі свіжим манго, огірком, морквою та великою кількістю кінзи
+                            – легкий та легкий салат, що ідеально підходить для літа! Веганський та безглютеновий
+                            рецепт. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="4">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -130,15 +132,15 @@
                             <img src="./img/Mango_Chicken.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Mango Chicken Lettuce Wraps
+                                    Mango Chicken Lettuce Wraps
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Эти рулетики из куриного салата с манго ОЧЕНЬ просты в приготовлении и НАСТОЛЬКО вкусны! Они легкие и полезные и идеально подходят для обеда или ужина.
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="5">Купить
+                            Ці рулетики з курячого салату з манго дуже прості в приготуванні та настільки смачні! Вони
+                            легкі та корисні та ідеально підходять для обіду чи вечері. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="5">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -146,15 +148,16 @@
                             <img src="./img/Rainbow_Antipasto.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Rainbow Antipasto
+                                    Rainbow Antipasto
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Этот салат из макарон с закусками «Радуги» — идеальный способ использовать оставшиеся ингредиенты для закусок! Кроме того, его легко приготовить, добавить пикантный винегрет с итальянскими травами и он очень вкусный!
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="6">Купить
+                            Цей салат з макаронів із закусками «Райдуги» — ідеальний спосіб використовувати інгредієнти
+                            для закусок, що залишилися! Крім того, його легко приготувати, додати пікантний вінегрет з
+                            італійськими травами і дуже смачний! </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="6">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -162,20 +165,19 @@
                             <img src="./img/Turmeric_Chicken.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Turmeric Chicken
+                                    Turmeric Chicken
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Идеальный ужин в будний день, сытный и довольно полезный!
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="7">Купить
+                            Ідеальна вечеря у будній день, ситна і досить корисна! </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="7">Замовити
                         </button>
                     </div>
                 </div>
-                
-                
+
+
             </div>
 
 
@@ -187,7 +189,7 @@
             <div class="wrapper-full">
 
                 <h2 class="top__title section-title">
-                Information for our guests
+                    Інформація для наших гостей
                 </h2>
 
                 <div class="tours__tour tour">
@@ -199,9 +201,9 @@
                             Menu
                         </h3>
                         <p class="tour__desc">
-                            Набор редких и красивых ингредиентов, где текстура, вкус и гармония
-                            главное. Окунитесь в атмосферу ресторана ORIGAMI с меню Питера Гилмора и
-                            тщательно подобранная карта вин от главного сомелье Вилема Пауэлла.
+                            Набір рідкісних і красивих інгредієнтів, де текстура, смак та гармонія
+                            головне. Пориньте в атмосферу ресторану ORIGAMI з меню Пітера Гілмора та
+                            ретельно підібрана мапа вин від головного сомельє Вілема Пауелла.
                         </p>
                     </div>
                 </div>
@@ -212,13 +214,15 @@
                             PETER GILMORE
                         </h3>
                         <p class="tour__desc">
-                            Любовь Питера к разнообразию природы и его бесконечные эксперименты на кухне
-                            и сад являются движущей силой в его кулинарии. Питер возглавляет команду ORIGAMI, уделяя особое внимание
-                            превосходство, инновации и гостеприимство.
+                            Любов Пітера до різноманітності природи та її нескінченні експерименти на кухні
+                            і сад є рушійною силою у його кулінарії. Пітер очолює команду ORIGAMI, приділяючи особливу
+                            увагу
+                            перевага, інновації та гостинність.
                         </p>
                     </div>
                     <div class="tour__pic tour__pic_mob-first">
-                        <img src="./img/rest_ckook.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
+                        <img src="./img/rest_ckook.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama"
+                            class="tour__thumb">
                     </div>
                 </div>
             </div>
@@ -228,7 +232,7 @@
         <section class="top" id="locations1">
             <div class="wrapper-full">
                 <h2 class="top__title section-title">
-                Today's best dishes to order
+                    Сьогодні найвишуканіші вина
                 </h2>
                 <div class="top__cards">
                     <div class="top__card">
@@ -236,15 +240,15 @@
                             <img src="./img/Romanée-Conti.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Romanée-Conti
+                                    Romanée-Conti
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Одно из культовых американских вин, Screaming Eagle, держало первенство в рейтинге самых дорогих вин в мире на протяжении 18 лет.Дело в том, что 1992 год – это первый винтаж, когда тогдашняя владелица хозяйства Джин Филипс решила самостоятельно разливать свой каберне совиньон по бутылкам, а не продавать виноград другим винодельням. 
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="8">Купить
+                            Одне з культових американських вин, Screaming Eagle, тримало першість у рейтингу найдорожчих
+                            вин у світі протягом 18 років. а не продавати виноград іншим виноробням. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="8">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -252,31 +256,32 @@
                             <img src="./img/Screaming_Eagle.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Screaming Eagle
+                                    Screaming Eagle
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Жеробоам (4,5-литровая бутылка) легендарного винтажа Победы с буквой «V» на этикетке была продана в 1947 году на аукционе Christie’s за $310 700. 1945-й считают одним из величайших миллезимов в Бордо.
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="9">Купить
-                        </button>
+                            Жеробоам (4,5-літрова пляшка) легендарного вінтажу Перемоги з літерою «V» на етикетці було
+                            продано 1947 року на аукціоні Christie's за $310 700. 1945-й вважають одним із найбільших
+                            міліозимів у Бордо. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="9">Замовити
                     </div>
                     <div class="top__card">
                         <div class="top__card-pic">
                             <img src="./img/Château_Mouton.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Château Mouton
+                                    Château Mouton
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Бутылка (империал) одного из величайших, как говорят эксперты, из когда-либо сделанных бордо была продана в 2010 году на аукционе Christie’s за $304 375. 1947 год выдался особенно жарким, и вино из ассамбляжа каберне франа и мерло достигло невиданных для той эпохи 14,4% алкоголя. 
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="10">Купить
+                            Пляшка (імперіал) одного з найбільших, як кажуть експерти, з коли-небудь зроблених бордо
+                            була продана в 2010 році на аукціоні Christie's за $304 375. 1947 рік видався особливо
+                            жарким, і вино з асамбляжу каберне франа і мірло досягло небачених. 4% алкоголю. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="10">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -284,15 +289,17 @@
                             <img src="./img/Heidsieck_Monopole.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Heidsieck Monopole
+                                    Heidsieck Monopole
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Многие вина стоят баснословно дорого благодаря своей редкости и/или высокому качеству. Шампанское Heidsieck Monopole 1907 года вошло в список самых дорогих вин мира из-за своей уникальной истории. В 1997 году 2000 бутылок были подняты со дна Балтийского моря, где они пролежали 81 год.
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="11">Купить
+                            Багато вина коштують надзвичайно дорого завдяки своїй рідкості та/або високій якості.
+                            Шампанське Heidsieck Monopole 1907 року увійшло до списку найдорожчих вин світу через свою
+                            унікальну історію. 1997 року 2000 пляшок було піднято з дна Балтійського моря, де вони
+                            пролежали 81 рік. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="11">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -300,15 +307,16 @@
                             <img src="./img/Château_Lafite.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Château Lafite
+                                    Château Lafite
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Шато Лафит признается профессионалами одним из величайших вин мира. Особенно оно популярно в Китае. Неудивительно, что три бутылки редкого 1869 года были проданы на аукционе в Гонконге за $230 000 каждая.                        
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="12">Купить
+                            Шато Лафіт визнається професіоналами одним із найбільших вин світу. Особливо воно популярне
+                            в Китаї. Не дивно, що три пляшки рідкісного 1869 були продані на аукціоні в Гонконгу за $230
+                            000 кожна. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="12">Замовити
                         </button>
                     </div>
                     <div class="top__card">
@@ -316,23 +324,25 @@
                             <img src="./img/Penfolds_Block.jpg" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                Penfolds Block 
+                                    Penfolds Block
                                 </h3>
 
                             </div>
                         </div>
                         <p class="top__card-desc">
-                        Это уникальное вино от одной из старейших и известнейших виноделен Австралии помещено не в обычную бутылку, а в специальную ампулу, заключенную в деревянный корпус. Чтобы правильно ее вскрыть, обладателю не понадобится штопор: к нему приедет сам винодел Penfolds и качественно проведет операцию.
-                        </p>
-                        <button class="top__card-more btn popup btn-primary btn-buy " id="13">Купить
+                            Це унікальне вино від однієї з найстаріших і найвідоміших виноробень Австралії поміщене не у
+                            звичайну пляшку, а в спеціальну ампулу, укладену у дерев'яний корпус. Щоб правильно її
+                            розкрити, власнику не знадобиться штопор: до нього приїде сам винороб Penfolds та якісно
+                            проведе операцію. </p>
+                        <button class="top__card-more btn popup btn-primary btn-buy " id="13">Замовити
                         </button>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </section>
-        
+
 
     </main>
 

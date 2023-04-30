@@ -24,16 +24,16 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#articles" class="header__link js-scroll">Інформація</a>
+                            <a href="#articles" class="header__link js-scroll">About</a>
                         </li>
                         <li class="header__item">
-                            <a href="#locations" class="header__link js-scroll">Locations</a>
+                            <a href="#locations" class="header__link js-scroll">Надихніться</a>
                         </li>
                         <li class="header__item">
-                            <a href="#videos" class="header__link js-scroll">Videos</a>
+                            <a href="menu.php" class="header__link js-scroll">Меню</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link js-scroll btn-lg" href="php/cart.php">Cart</a>
+                            <a class="header__link js-scroll btn-lg" href="php/cart.php">Кошик</a>
                         </li>
                         <?php
                         // проверяем, авторизован ли пользователь
@@ -43,7 +43,7 @@
                             echo '<li class="header__item"><a href="php/logout.php" class="header__link js-scroll">Log Out</a></li>';
                         } else {
                             // если нет, показываем кнопку Sign In
-                            echo '<li class="header__item"><a href="sign.html" class="header__link js-scroll">Sign In</a></li>';
+                            echo '<li class="header__item"><a href="sign.html" class="header__link js-scroll">Увійти</a></li>';
                         }
                         ?>
                     </ul>
@@ -77,7 +77,7 @@
         <!-- Intro end -->
 
         <!-- Benefits start -->
-        <section class="benefits">
+        <section class="benefits" id="INTRESTING">
             <div class="benefits__wrap">
 
                 <div class="benefits__cards">
@@ -86,42 +86,34 @@
                             <img src="./img/svg/church-ico.svg" alt="Welcome to Odigo!" class="benefits__card-thumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Welcome to Odigo!
+                            Ласкаво просимо до Origami
                         </h3>
                         <p class="benefits__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Один із найвишуканіших та престижних ресторанів міста Харків
                         </p>
-                        <a href="#!" class="benefits__card-more">
-                            LEARN MORE
-                        </a>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
                             <img src="./img/svg/person-ico.svg" alt="Your Personal Japan Guide" class="benefits__card-thumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Your Personal Japan Guide
+                            Обслуговування в Origami
                         </h3>
                         <p class="benefits__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Швидкий відгук та обслуговування наших гостей та клієтів
                         </p>
-                        <a href="#!" class="benefits__card-more">
-                            LEARN MORE
-                        </a>
+                        
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
                             <img src="./img/svg/building-ico.svg" alt="Promoting Local Businesses" class="benefits__card-thumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Promoting Local Businesses
+                            Мережа закладів Origami
                         </h3>
                         <p class="benefits__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Відвудуйте наші ресторани не тільки в Харкові,а і в інших містах країни
                         </p>
-                        <a href="#!" class="benefits__card-more">
-                            LEARN MORE
-                        </a>
                     </div>
                 </div>
             </div>
@@ -141,21 +133,19 @@
                             Menu
                         </h3>
                         <p class="tour__desc">
-                            A progression of rare and beautiful ingredients where texture, flavour and harmony is paramount. Delve into the Quay dining experience with Peter Gilmore’s Menu and a thoughtfully curated Wine List by Head Sommelier, Wilem Powell.
+                        Набір рідкісних і красивих інгредієнтів, де текстура, смак і гармонія є найважливішими. Зануртеся в ресторан Quay за допомогою меню Пітера Гілмора та ретельно підібраної винної карти від головного сомельє Вілема Пауелла.
                         </p>
-                        <a href="menu.php" class="tour__more">READ MORE</a>
+                        <a href="menu.php" class="tour__more">ПЕРЕГЛЯНУТИ</a>
                     </div>
                 </div>
 
                 <div class="tours__tour tour">
                     <div class="tour__info">
                         <h3 class="tour__title">
-                            PETER GILMORE
+                            Peter Gilmore
                         </h3>
                         <p class="tour__desc">
                             Peter’s appreciation of nature’s diversity and his endless experimentation in the kitchen and garden are the driving forces in his cooking. Peter leads the Quay team with a focus on excellence, innovation and hospitality.
-                        </p>
-                        <a href="#!" class="tour__more">READ MORE</a>
                     </div>
                     <div class="tour__pic tour__pic_mob-first">
                         <img src="./img/rest_ckook.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
@@ -168,13 +158,12 @@
                     </div>
                     <div class="tour__info">
                         <h3 class="tour__title">
-                            EVENTS
+                            Events
                         </h3>
                         <p class="tour__desc">
-                            Celebrate at one of Australia’s most awarded restaurants, with panoramic views encompassing the Sydney Harbour Bridge and Sydney Opera House. From intimate dinner parties in the Private Dining Room, to long lunches in the spectacular Upper Tower, to large
-                            cocktail events in The Green Room – Quay delivers an immersive dining experience with views like no other.
-                        </p>
-                        <a href="#!" class="tour__more">READ MORE</a>
+                        Святкуйте в одному з найпрестижніших ресторанів Австралії з панорамним краєвидом на Сіднейський міст Харбор і Сіднейський оперний театр.
+                        Коктейльні заходи в The Green Room – Origami створюють захоплюючі враження від обіду з неперевершеними краєвидами.
+
                     </div>
                 </div>
 
@@ -183,11 +172,11 @@
         <!-- Tours end -->
 
         <!-- Places start -->
-        <section class="places">
+        <section class="places" id="locations">
             <div class="wrapper-full">
                 <div class="places__caption">
                     <h2 class="places__title section-title">
-                        Get inspired for your next trip
+                    Надихніться для наступного візиту
                     </h2>
                 </div>
 
@@ -196,39 +185,39 @@
                     <div class="places__card places__card_size_lg">
                         <img src="./img/AB5I5541_NikkiTo.jpg" alt="EASTER AT QUAY" class="places__card-pic places__card-pic_size_lg">
                         <h3 class="places__card-title">
-                            EASTER AT QUAY
+                            МЕНЮ ORIGAMI
                         </h3>
-                        <a href="#!" class="places__card-link"></a>
+                        <a href="menu.php#locations" class="places__card-link"></a>
                     </div>
 
                     <div class="places__card places__card_size_lg">
                         <img src="./img/AB5I6743_NikkiTo.jpg" alt="MOTHER’S DAY AT QUAY" class="places__card-pic places__card-pic_size_lg">
                         <h3 class="places__card-title">
-                            MOTHER’S DAY AT QUAY
+                        ORIGAMI INTRESTING
                         </h3>
-                        <a href="#!" class="places__card-link"></a>
+                        <a href="#INTRESTING" class="places__card-link"></a>
                     </div>
 
                     <div class="places__card places__card_size_sm">
                         <img src="./img/Quay-BYO-Dust-Of.jpg" alt="DUST OFF YOUR BOTTLES" class="places__card-pic places__card-pic_size_sm">
                         <h3 class="places__card-title">
-                            YOUR BOTTLES
+                            КОЛЕКЦІЯ ВИН ORIGAMI
                         </h3>
-                        <a href="#!" class="places__card-link"></a>
+                        <a href="menu.php#locations1" class="places__card-link"></a>
                     </div>
 
                     <div class="places__card places__card_size_sm">
                         <img src="./img/Untitled-design-18.png" alt="Niigata" class="places__card-pic places__card-pic_size_sm">
                         <h3 class="places__card-title">
-                            VIVID AT QUAY
+                        ЗАМОВЛЕННЯ
                         </h3>
-                        <a href="#!" class="places__card-link"></a>
+                        <a href="php/Share_cart.php" class="places__card-link"></a>
                     </div>
 
                     <div class="places__card places__card_size_sm">
                         <img src="./img/Quay-view.jpg" alt="NEWS" class="places__card-pic places__card-pic_size_sm">
                         <h3 class="places__card-title">
-                            NEWS
+                        НОВИНИ
                         </h3>
                         <a href="#!" class="places__card-link"></a>
                     </div>

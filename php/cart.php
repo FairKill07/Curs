@@ -96,7 +96,7 @@
                         <div class="description">
                             <span><?= $product[array_key_first($product)]['product_name'] ?></span>
                             <span><?= $product[array_key_first($product)]['dish_type'] ?></span>
-                            <span>Код товара :
+                            <span>Код товару :
                                 <?= $id ?>
                             </span>
                         </div>
@@ -113,7 +113,7 @@
 
             <div class="title">
             <form method="post" action="sign_work.php">
-            <button class="top__card-more ">Купить</button>
+            <button class="top__card-more ">Зарезервувати</button>
             </form>
             </div>
 
