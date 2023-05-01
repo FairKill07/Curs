@@ -24,7 +24,7 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#articles" class="header__link js-scroll">About</a>
+                            <a href="#articles" class="header__link js-scroll">О нас</a>
                         </li>
                         <li class="header__item">
                             <a href="#locations" class="header__link js-scroll">Надихніться</a>
@@ -40,7 +40,7 @@
                         session_start();
                         if (isset($_SESSION['username'])) {
                             // если да, показываем кнопку Log Out
-                            echo '<li class="header__item"><a href="php/logout.php" class="header__link js-scroll">Log Out</a></li>';
+                            echo '<li class="header__item"><a href="php/Share_cart.php" class="header__link js-scroll">Особистый кабінет</a></li>';
                         } else {
                             // если нет, показываем кнопку Sign In
                             echo '<li class="header__item"><a href="sign.html" class="header__link js-scroll">Увійти</a></li>';
