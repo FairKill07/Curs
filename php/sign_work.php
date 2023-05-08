@@ -27,7 +27,7 @@ try {
     header('Location: ../menu.php');
 
 } catch (PDOException $e) {
-    echo 'Ошибка подключения к базе данных: ' . $e->getMessage();
+    echo 'Помилка базе данных: ' . $e->getMessage();
     exit();
 }
 ?>

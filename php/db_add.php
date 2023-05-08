@@ -11,7 +11,7 @@ try {
     $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo 'Ошибка подключения к базе данных: ' . $e->getMessage();
+    echo 'Помилка конекта БД' . $e->getMessage();
     exit();
 }
 

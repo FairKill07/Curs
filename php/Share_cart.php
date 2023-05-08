@@ -51,7 +51,7 @@
     if (!isset($_SESSION['user_id'])) {
         echo 'Please log in to see your shopping cart';
     } else {
-
+        error_reporting(0);
         require_once 'db_add.php';
 
         $stmt = $db->prepare("SELECT session_data FROM users WHERE id = ?");

@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute();
     $count = $stmt->fetchColumn();
     if ($count > 0) {
-        echo $error_message = "Ошибка регистрации: пользователь с таким именем уже существует";
+        echo $error_message = "Такий юзер вже э";
     } else {
         // Добавляем пользователя в базу данных
         try {
@@ -25,12 +25,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bindParam(':phone', $phone);
 
             if ($stmt->execute()) {
-                echo $error_message = "Успешная регестрация";
+                echo $error_message = "Успішно";
             } else {
-                $error_message = "Ошибка регистрации: " . $stmt->errorInfo()[2];
+                $error_message = "Помилка: " . $stmt->errorInfo()[2];
             }
         } catch (PDOException $e) {
-            $error_message = 'Ошибка регистрации: ' . $e->getMessage();
+            $error_message = 'Помилка: ' . $e->getMessage();
         }
     }
 }

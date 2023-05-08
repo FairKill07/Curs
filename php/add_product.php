@@ -13,9 +13,9 @@ $product_name = $_POST['product_name'];
 // подготовка и выполнение запроса на добавление данных в таблицу
 $sql = "INSERT INTO products (photo_path,product_name, dish_type, price) VALUES ('$photo_path','$product_name', '$dish_type', '$price')";
 if ($db->query($sql)) {
-  echo "Продукт успешно добавлен";
+  echo "Страва добавленна";
 } else {
-  echo "Ошибка: " . $sql . "<br>" . $db->errorInfo()[2];
+  echo "Помилка: " . $sql . "<br>" . $db->errorInfo()[2];
 }
 
 // закрытие соединения с базой данных

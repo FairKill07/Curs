@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header('Location: ../index.php');
             exit();
         } else {
-            $error_message = 'Неправильный логин или пароль.';
+            $error_message = 'Неправильно введено пароль.';
         }
     } catch (PDOException $e) {
         $error_message = 'Ошибка входа: ' . $e->getMessage();
